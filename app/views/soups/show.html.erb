@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+<strong><%= flash[:notice] %></strong>
+<% end %>
+
+<h2><%= @soup.name %></h2>
+<h2><%= 'Very popular' if @soup.featured %></h2>
+<h2><%= 'Still waiting for people to get used with it' unless @soup.featured %></h2>
+
+
+<%= link_to 'Toggle the feature', toggle_feature_path %>
+
+<%= link_to 'Back to the same category', @soup.category %>

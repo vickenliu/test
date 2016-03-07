@@ -1,0 +1,23 @@
+	<% if flash[:notice] %>
+	<strong><%= flash[:notice] %></strong>
+	<% end %>
+<h1>Category <%= @category.id %> <%= @category.name %></h1> 
+
+
+<h2><%= @category.name %> Soups</h2>
+
+<table>
+	<thead>
+	<th>Name</th> <th>Feature</th> <th>See More</th>
+	</thead>
+	<% @soups.each do |f|%>
+	<tr>
+	<td><%= f.name %></td>
+	<td><%= 'Popular' if f.featured %><%= 'So so' unless f.featured %></td>
+	<td><%= link_to 'Details', [@category,f] %></td>
+	</tr>
+	<% end %>
+</table>
+
+<%= link_to 'Add a soup', new_category_soup_path(@category) %><br/>
+<%= link_to 'Back to Categories' , categories_path %>

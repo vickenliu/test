@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 80%;
+	margin: 0px auto;
+}
+header{
+	padding: 0px;
+	display: block;
+	background-color: #233655;
+}
+header #logo{
+	display: inline-block;
+	float: left;
+}
+header div.logo_title a{
+	color: white;
+	font-size: 4em;
+	text-decoration: none;
+	line-height: 230px;
+	margin-bottom: 50px;
+}
+ header #logo img{
+
+ 	margin-top: 20px;
+ 	width: 250px;
+ }
+ header div.logo_title{
+ 	margin-left: 30px;
+ 	display: inline-block;
+ }
+ nav{
+ 	clear: both;
+ 	display: block;
+ }
+ nav ul li {
+ 	list-style-type: none;
+ 	padding-bottom: 10px;
+ }
+ nav ul li a{
+ 	color: white;
+ 	text-decoration: none;
+ 	font-size: 2em;
+
+ }
+ .wrapper{
+ 	padding: 10px 20px;
+ }
+ .wrapper p{
+ 	clear: both;
+ 	font-size: 20px;
+ }
+  .wrapper p a{
+  	font-size: 30px;
+  }
+  div.new_category{
+  	margin-top: 25px;
+  	margin-left: 100px;
+  	display: inline-block;
+  	background-color: #33ee77;
+  	text-align: center;
+  	padding: 5px;
+  	width: 150px;
+  	font-size: 20px;
+ 	border: 1px solid black;
+ 	border-radius: 5px;
+  }
+  div.wrapper h1#category_title{
+  	float: left;
+  	display: inline-block;
+  }
+  div.new_category a{
+  	color: white;
+  	text-decoration: none;
+  }

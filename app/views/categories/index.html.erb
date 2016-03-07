@@ -1,0 +1,22 @@
+
+<h1 id='category_title'>Categories</h1>
+<div class='new_category'>
+<%= link_to 'New Category' , new_category_path %>
+</div>
+	<% if flash[:notice] %>
+	<strong><%= flash[:notice] %></strong>
+	<% end %> 
+<% @categories.each do |f| %>
+<p><%= link_to f.name ,f %>   (contains <%= f.soups.count %> soups)</p>
+	<% if session[:vip] %>
+	<div class='vip_controll'>
+	<%= link_to 'Edit', edit_category_path(f) %>
+	<%= link_to 'Delete', category_path(f), method: :delete %>
+	</div>
+	<% end %>
+<% end %>
+
+	<% if session[:vip] %>
+<p>Extremely tasty</p>
+<% end %>
+

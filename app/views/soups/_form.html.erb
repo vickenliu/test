@@ -1,0 +1,13 @@
+<%= form_for @soup do |f|%>
+<label>Soupe Name</label>
+<%= f.text_field :name %><br/>
+
+<label>Soupe Featured</label>
+Yes<%= f.radio_button :featured, true %>
+No<%= f.radio_button :featured, false %>
+
+<label>Soupe Category</label>
+<%= f.select :category_id, Category.all.collect {|p| [p.name, p.id]} %>
+
+<%= f.submit %>
+<% end %>

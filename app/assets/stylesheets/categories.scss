@@ -1,0 +1,62 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#new_category{
+	font-size:20px;
+	display:block;
+	label{
+	margin-right:10px;
+	display:block;
+	}
+	input#category_name{
+	margin: 10px 0px;
+	display:block;
+	width:30%;
+	height:30px;
+	}
+}
+form.edit_category{
+label{
+	display:block;
+}
+input{
+font-size:1.3em;
+height:30px;
+width:20%;
+margin:10px 0px;
+	display:block;
+}
+	
+}
+
+
+div.button{
+	margin-bottom:100px;
+	input{
+	font-size:40px;
+	width:150px;
+	}
+}
+table,th ,td{
+	text-align:center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td{
+	width:20%;
+	height:40px;
+	font-size:1.2em;
+}
+
+th{
+	font-weight:bold;
+	font-size:1.5em;
+	width:20%;
+	height:50px;
+	background-color:#f9f9f9;
+}
+tr:nth-child(even){
+	background-color:#f2f2f2;
+	
+}
